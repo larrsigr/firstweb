@@ -1,0 +1,238 @@
+	*{
+		padding: 0;
+		margin: 0;
+		text-align: none;
+		box-sizing: border-box;
+		font-size:  25px;
+	}
+	.header{
+		background-color: #e1e6e5;
+		height: 300px;
+	}
+	.main{
+		background-color: #ffffff;
+		min-height: 800px;
+		display: flex;
+		flex-flow: wrap;
+		width: 100%;
+	}
+	.footer{
+		background-color: #3d9946;
+		min-height: 200px;
+	}
+	
+	.header .menu-header{
+		background-color: #f7f8fa;
+		height: 37px;
+	}
+
+	.clear{
+		clear: both;
+	}
+.menu-cap3{
+	font-weight: bold;
+	width: 100%;
+	margin: 0 auto;
+	list-style: none;
+	background-color: #3d9946;
+	height: 38px;
+	position: fixed;
+	position: sticky;
+}
+
+.menu-cap3 > li{
+	float: left;
+	left: 15%;
+}
+.menu-cap3 > li a{
+	font-size: 16px;
+	display: block;
+	padding: 10px 15px;
+	text-decoration: none;
+	border-right: 0px solid #e0caca;
+	color: #fff;
+}
+.menu-cap3 > li:last-child a{
+	border-right: 0;
+}
+.menu-cap3 > li a{
+	border-left: 1px solid #e0caca;
+}
+.menu-cap3 li{
+	position: relative;
+
+}
+.menu-cap3 li .menu-sub{
+	list-style: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 200px;
+	box-shadow: 0px 1px 8px -4px #333;
+	background-color: #e89e51;
+	display: none;
+}
+.menu-cap3 li .menu-sub ul{
+	top: 0;
+	left: 100%;
+}
+.menu-cap3 li:hover > ul{
+	display: block;
+}
+.menu-cap3 li:hover > a {
+	background: #b36c22;
+}
+.dangnhap{
+	text-decoration: none;
+	float: right;
+	border: 1px solid gray;
+	border-radius: 13px;
+	background-color: #3d9946;
+	color: white;
+	font-size: 21px;
+	margin-top: 25px;
+	margin-right: 40px;    
+}
+.dangnhap:hover{
+  color: #d9d55d;
+}
+#dangki{
+	margin-right: 40px;
+}        
+.banner{
+	height: 75px;
+}
+.logo{
+	margin-left: 12%;
+}
+.main .nav{
+	background-color: #fff;
+	width: 15%;
+}
+.main .content{
+	background-color: #fff;
+	width: 70%;
+}
+.main .mainvct{
+	width: 100%;
+	max-height: 800px;
+}
+.campus{
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+}
+.campus-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+}
+.campus-col img{
+	width: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer h3{
+	bottom: 49%;
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+}
+
+.binhluan{
+	width: 80%;
+	margin: auto;
+ 	padding-top: 100px;
+ 	text-align: center;
+}
+.binhluan-col{
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+	background: #fff3f3;
+	padding: 25px;
+	cursor: pointer;
+	display: flex;
+}
+.binhluan-col img{
+	height: 40px;
+	margin-left: 5px;
+	margin-right: 30px;
+	border-radius: 50%;
+}
+
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+p{
+	color: #777;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+.row{
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.about-us{
+	width: 100%;
+	min-height: 800px	;
+	margin: auto;
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+.about-col{
+	flex-basis: 48%;
+	padding: 30px 2px;
+}
+.about-us img{
+	width: 100%;
+}
+.khoa-hoc{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.khoa-hoc-col{
+	flex-basis: 31%;
+	background: #fff3f3;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	padding: 20px 15px;	
+	transition: 0.5s;
+}
+.khoa-hoc-col a{
+	text-decoration: none;
+	font-size: 15;
+}
+.khoa-hoc-col h3{
+	text-decoration: none;	
+}
+.khoa-hoc-col img{
+	width: 60%;
+}
+.khoa-hoc-col a:hover{
+	box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}

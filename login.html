@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login website</title>
+    <link rel="stylesheet" href="style-login.css">
+    <link rel="icon" href="logo222.png">
+</head>
+<body>
+    <section>
+        <div class="img-bg">
+            <img src="img1.png">
+        </div>
+        <div class="noi-dung">
+            <div class="form">
+                <h2>Đăng nhập</h2>
+                <form action="trangchu.html" name="myform" onsubmit="return login();" method="POST">
+                    <div class="input-form">
+                        <span>Tên đăng nhập</span>
+                        <input required="true" type="text" name="user" id="tentk" placeholder="Tài khoản: hoctotexcel">
+                    </div>
+                    <div class="input-form">
+                        <span>Mật khẩu</span>
+                        <input required="true" type="password" name="pass" id="mk" placeholder="Mật khẩu: 12345678">
+                    </div>
+                    <div class="input-form">
+                        <input type="submit" value="Đăng Nhập">
+                    </div>
+                    <div class="input-form">
+                        <p> Bạn chưa có tài khoản? <a href="register.html">Đăng kí</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function login()
+   {
+    var un=document.forms["myform"]["user"].value;
+    var pass=document.forms["myform"]["pass"].value;
+        if(un=="hoctotexcel")
+        {
+            if(pass=="12345678")
+            {
+                alert("login succesful");
+                return true;
+            }
+            else
+            {
+                alert("login wrong");
+                return false;
+
+            }
+        }
+        else
+        {
+            alert("login wrong");
+            return false;
+        }
+   }
+    </script>
+</body>
+</html>
